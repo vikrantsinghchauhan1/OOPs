@@ -1,0 +1,14 @@
+Mistakes in Encapsulation
+Encapsulation means combining data and related methods in a class while controlling access to its internal state.
+No.	Common mistake              	                                                             Why it is wrong
+
+1	Making all fields public            -->   	                              Other classes can change the fields directly.
+2	Not using private for internal fields when appropriate            --> 	      The class loses control over direct access to its data.
+3	Providing setters without validation            -->	                             Invalid values may enter the object.
+4	Allowing unrestricted changes to sensitive data            -->	                 The object's rules can be bypassed.
+5	Creating getters and setters for every field automatically            -->          Some fields should be read-only or not exposed at all.
+6	Returning mutable internal objects directly            -->                    Other code may modify the object's internal state indirectly.
+7	Confusing data hiding with complete security            -->	               Encapsulation alone does not provide authentication or authorization.
+8	Duplicating validation logic in many places            -->                 Inconsistent rules can lead to bugs.
+9	Exposing implementation details unnecessarily            -->	            Changes inside the class may affect other classes.
+10	Making fields private but exposing unrestricted operations            -->     Public methods may still allow invalid state changes.

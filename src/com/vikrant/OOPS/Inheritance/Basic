@@ -1,0 +1,32 @@
+1. What is inheritance?
+Inheritance is a feature in Java that allows one class to acquire accessible fields and methods from another class.
+
+It helps us reuse existing code instead of writing the same functionality again.
+
+For example, imagine you are building an e-commerce application. You have a User class containing a name and an email.
+ You want to create Customer and Admin classes.
+
+Both customers and admins have names and email addresses,
+so you can define those common features in the User class and inherit them in the other classes.
+
+
+
+Types of inheritance in Java
+Java supports these main forms of class inheritance:
+
+
+1. Single inheritance
+One child inherits from one parent.
+class Car extends Vehicle
+
+2. Multilevel inheritance
+A class inherits from a child class, creating multiple levels.
+Animal → Dog → Puppy
+
+3. Hierarchical inheritance
+Multiple child classes inherit from one parent.
+Vehicle → Car, Bike
+
+4. Multiple inheritance
+A class inherits from multiple parents. Java does not support this through classes, but a class can implement multiple interfaces.
+class SmartPhone implements Camera, GPS
